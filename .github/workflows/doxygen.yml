@@ -17,7 +17,7 @@ jobs:
       run: sudo apt-get install -y doxygen
 
     - name: Generate Documentation
-      run: doxygen DoxyFile
+      run: doxygen Doxyfile
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
