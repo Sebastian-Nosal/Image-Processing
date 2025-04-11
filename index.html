@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binaryzacja obrazu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <button id="grayscaleBtn">Generuj grayscale</button>
+
+    <label>
+      Próg Binaryzacji
+      <input type="range" id="thresholdSlider" min="0" max="255" />
+    </label>
+
+    <button id="binarizeBtn">Binaryzuj</button>
+    <button id="overlayBtn">Nakładanie binaryzacji na oryginał</button>
+    <button id="overlayBtnGrayScale">Nakładanie binaryzacji na grayscale</button>
+
+
+    <input type="file" id="fileInput" />
+
+    <div class="checkboxes">
+      <label><input type="checkbox" id="showOriginal" checked> Oryginał</label>
+      <label><input type="checkbox" id="showGrayscale" checked> Grayscale</label>
+      <label><input type="checkbox" id="showBinarized" checked> Binaryzacja</label>
+      <label><input type="checkbox" id="showOverlay" checked> Nakładanie</label>
+    </div>
+  </div>
+
+  <div class="canvas_container" id="canvas_container">
+    <canvas id="originalCanvas"></canvas>
+    <canvas id="grayscaleCanvas"></canvas>
+    <canvas id="binarizedCanvas"></canvas>
+    <canvas id="overlayCanvas"></canvas>
+  </div>
+  <div class="btnContainer">
+    <button id="btnLeft">←</button>
+    <button id="btnRight">→</button>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid black;
+  background: #808080;
+}
+
+.menu > * {
+  margin: 30px;
+  padding: 10px;
+  background: #505050;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: white;
+}
+
+.menu label {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .checkboxes label {
+  flex-direction: row;
+}
+
+
+.canvas_container {
+  max-width: 80vw;
+  display: flex;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 30px 0px;
+  max-height: 90vh;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+canvas {
+  max-width: 49%;
+  margin: 1%;
+  display: block;
+  border: 1px solid #303030;
+  border-radius: 15px;
+}
+
+.btnContainer {
+  position: absolute;
+  bottom: 2vh;
+  width: 200px;
+  display: flex;
+  border-radius: 30px;
+  background-color: #808080;
+  justify-content: center;
+  align-items: center;
+  border:1px solid #303030;
+  left: calc(40vw - 100px);
+}
+
+.btnContainer button {
+  background: #505050;
+  color: aliceblue;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 10px;
+  width: 25px;
+  height: 25px;
+}
